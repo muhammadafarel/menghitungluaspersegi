@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menghintung luas persegi</title>
+</head>
+<body>
+    <h1>menghintung luas persegi</h1>
+    <label form="sisi">masukan panjang sisi:</label>
+    <input type="number" id="sisi" name="sisi" required>
+    <br><br>
+    <button onclick="hitungluas()">Hitung</button>
+    <br><br>
+    <p id="hasil"></p>
+
+<script>
+    function hitungluas() {
+      const sisi = document.getElementById("sisi").value; // ambil nilai sisi dari input
+      const luas = sisi * sisi; // menghitung luas persegi
+      document.getElementById("hasil").innerHTML = "Luas persegi dengan sisi " + sisi + "adalah " + luas;
+    } 
+
+</script>
+</body>
+</html>
